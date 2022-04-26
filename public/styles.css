@@ -18,6 +18,9 @@ body {
     Liberation Mono, monospace;
   font-size: 1.3rem;
   line-height: 1.2;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 h1,
@@ -60,7 +63,8 @@ ul {
   font-size: 2rem;
 }
 
-nav {
+nav,
+footer {
   font-size: 1rem;
   background: #333;
   position: sticky;
@@ -89,6 +93,9 @@ nav {
 .margins {
   margin: 0px auto;
   max-width: 1200px;
+  width: -webkit-fill-available;
+  width: -moz-fill-available;
+  width: stretch;
 }
 
 .card {
@@ -131,4 +138,26 @@ nav {
 
 h2 {
   font-size: 3rem;
+}
+
+a {
+  color: var(--white);
+}
+
+.anchor {
+  position: relative;
+  top: -100px;
+  /* display: none; */
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.arrow {
+  font-size: 2rem;
+}
+
+.opened .arrow {
+  transform: rotate(180deg);
 }

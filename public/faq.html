@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SVB-41 | FAQ</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+        const nodes = document.getElementsByClassName('togglers')
+        for (const node of nodes) {
+          const toggler = node.children[0]
+          const content = node.children[1]
+          toggler.addEventListener('click', () => {
+            const classes = toggler.className.split(' ')
+            const isOpen = classes.includes('opened')
+            if (isOpen) {
+              const cl = classes.filter(c => c !== 'opened')
+              toggler.className = cl.join(' ')
+              content.style.display = 'none'
+            } else {
+              const cl = [...classes, 'opened']
+              toggler.className = cl.join(' ')
+              content.style.display = 'block'
+            }
+          })
+        }
+      })
+    </script>
+  </head>
+  <body>
+    <nav class="pl">
+      <div class="margins row space-between align-center flex-1">
+        <a href="/" class="logo">SVB-41</a>
+        <ul class="row gxl">
+          <a href="/#what-is-this">Welcome new Commander!</a>
+          <a href="/#storyline">Storyline</a>
+          <a href="/#roadmap">Roadmap</a>
+          <a href="/faq">FAQ</a>
+          <a href="https://app.svb-41.com">Play</a>
+        </ul>
+      </div>
+    </nav>
+    <div class="column margins pxxxl gm">
+      <h1>Frequently Asked Questions</h1>
+      <div class="card togglers">
+        <div class="row space-between align-center pm">
+          <h2>Title</h2>
+          <div class="arrow">v</div>
+        </div>
+        <div class="column pm" style="background: #333; display: none;">
+          <p>
+            This is my body
+          </p>
+        </div>
+      </div>
+      <div class="card togglers">
+        <div class="row space-between align-center pm">
+          <h2>Title</h2>
+          <div class="arrow">v</div>
+        </div>
+        <div class="column pm" style="background: #333; display: none;">
+          <p>
+            This is my body
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer class="pl">
+      <div class="row space-between margins align-center">
+        <div>© 2022 — Arthur Escriou & Guillaume Hivert</div>
+        <div class="row gs" style="text-align: right;">
+          <a href="/about">About us</a>
+          <a href="https://github.com/svb-41">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
