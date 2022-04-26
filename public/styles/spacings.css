@@ -1,0 +1,18 @@
+/* Paddings */
+.pxxs { padding: 3px; }
+.pxs { padding: 6px; }
+.ps { padding: 9px; }
+.pm { padding: 12px; }
+.pl { padding: 18px; }
+.pxl { padding: 24px; }
+.pxxl { padding: 36px; }
+.pxxxl { padding: 48px; }
+
+/* Gaps */
+.gxxs { gap: 3px; }
+.gxs { gap: 6px; }
+.gs { gap: 9px; }
+.gm { gap: 12px; }
+.gl { gap: 18px; }
+.gxl { gap: 24px; }
+.gxxl { gap: 36px; }

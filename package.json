@@ -1,0 +1,15 @@
+{
+  "name": "starships-landing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve public"
+  },
+  "dependencies": {
+    "serve": "^13.0.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
+}
